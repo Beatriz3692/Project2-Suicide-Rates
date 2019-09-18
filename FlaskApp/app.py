@@ -61,7 +61,7 @@ def suicide_rates_by_country(country):
     df = pd.read_sql_query(stmt, db.session.bind)
 
     sample_data = df.loc[df['COUNTRY'] == country, :]
-    
+
     years = [ year.split('_')[-1] for year in sample_data.columns.values[2:]]
 
     suicide_rates = sample_data.values[0][2:]

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title >International Suicide Rates</title>
+    <link rel="stylesheet" href="https://bootswatch.com/4/cerulean/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/d3Style.css')}}">
+    <link href="{{ url_for('static', filename='css/map.css') }}" rel="stylesheet">
+
+</head>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+            <h1 style="color:black;">Suicide Rates by Country</h1>
+            <p style = "font-size:20x">Interactive charts below</p>
+        </div>
+    </div>
+    <div class="row">
+
+        <div class="col-md-2">
+            <div class="well">
+                <h5 style="color:black;">Select Year:</h5>
+                <select id="selYear" onchange="yearChanged(this.value)"></select>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div id="map-title" style="color:black;"><h3>Suicide rates per 100,000 persons</h3></div>
+                <div id="map"></div>
+            </div>
+
+        </div>
+
+</body>
+
+</html>
