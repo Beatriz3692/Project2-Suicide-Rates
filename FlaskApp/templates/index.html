@@ -18,22 +18,64 @@
             <p style = "font-size:20x">Interactive charts below</p>
         </div>
     </div>
+</div>
+    <div class="row">
+        <div class="col-md-2">
+            <div class="well">
+                <h5 style="color:black;">Select Country:</h5>
+                <select id="selDataset" onchange="optionChanged(this.value)"></select>
+            </div>
+        </div>
+        <div class="col-md-12">
+            <div id="line"></div>
+        </div>
+    </div>
+
     <div class="row">
 
+            <div class="col-md-12">
+                <div id="bar"></div>
+            </div>
+
+    </div>
+    <div class="row">
         <div class="col-md-2">
             <div class="well">
                 <h5 style="color:black;">Select Year:</h5>
                 <select id="selYear" onchange="yearChanged(this.value)"></select>
             </div>
         </div>
-
         <div class="row">
             <div class="col-md-12">
-                <div id="map-title" style="color:black;"><h3>Suicide rates per 100,000 persons</h3></div>
+                <div id="map-title"><h3>Suicide rates per 100,000 persons <h3></div>
                 <div id="map"></div>
             </div>
 
         </div>
+
+
+<!-- D3, graphing library -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.0.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3-tip/0.7.1/d3-tip.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.5.0/d3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://d3js.org/d3.v4.min.js"></script>
+<script src="https://d3js.org/d3-array.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo.v1.min.js"></script>
+<script src="https://d3js.org/d3-geo-projection.v2.min.js"></script>
+
+<!-- plotly for graphs -->
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<!-- javescript sources  -->
+<script src="{{ url_for('static', filename='js/app.js') }}"></script>
+<script src="{{ url_for('static', filename='js/d3.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/d3.v3.min.js') }}"></script>
+
 
 </body>
 

@@ -1,0 +1,28 @@
+function buildCharts(country) {
+    // TO DO: Iterate through all states
+
+    d3.json(`/metadata/country/${country}`, function(country_data) {
+        console.log(country);
+
+        // Cast rates as numbers
+
+        console.log('country data', country_data);
+
+        // Build line chart
+	    var trace1 = {
+            x: country_data.year,
+            y: country_data.suicide_rates,
+            type: "line",
+            marker: {
+                color: 'red'
+            },
+            text: 'Counts per 100,000 persons'
+        };
+        var data = [trace1];
+        var layout = {
+            title: `${country} Suicide Rates`,
+            xaxis: { title: "Year"},
+            yaxis: { title: "Suicide Rate"}
+        };
+        Plotly.newPlot("line", data, layout);
+    });
