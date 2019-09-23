@@ -1,1 +1,1 @@
-web gunicorn pet_pals_env app:app
+web: gunicorn FlaskApp.app:app
