@@ -118,7 +118,7 @@ function buildMap(year) {
                                 toolTip.transition()
                                     .duration(200)
                                     .style("opacity", .9);
-                                toolTip.html(`<strong>${d.properties.name}</strong>
+                                toolTip.html(`<strong>${d.properties.countries}</strong>
                                             <p>${d.properties.suicide_rates}</p>`)
                                     .style("left", (d3.event.pageX) + "px")
                                     .style("top", (d3.event.pageY - 28) + "px");
@@ -136,7 +136,7 @@ function buildMap(year) {
                             .attr("width", 140)
                             .attr("height", 200)
                             .selectAll("g")
-                            .data(colorsRange)
+                            .data(colorsScale)
                             .enter()
                             .append("g")
                             .attr("transform", function (d, i) {

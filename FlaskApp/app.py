@@ -1,5 +1,5 @@
 import os
-import json 
+import json
 
 import pandas as pd
 import numpy as np
@@ -9,7 +9,7 @@ from sqlalchemy.ext.automap import automap_base
 from sqlalchemy.orm import Session
 from sqlalchemy import create_engine
 
-from flask import Flask, jsonify, render_template
+from flask import Flask, jsonify, render_template, url_for
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
@@ -32,7 +32,7 @@ suicide_rates_Metadata = Base.classes.suicide_rates
 # Samples = Base.classes.samples
 
 
-@app.route("/")
+@app.route("/", methods=['GET', 'POST'])
 def index():
     """Return the homepage."""
     return render_template("index.html")

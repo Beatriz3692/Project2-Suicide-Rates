@@ -12,13 +12,16 @@
 
 </head>
 <div class="container">
+    <!-- title -->
     <div class="row">
         <div class="col-md-12 jumbotron text-center">
             <h1 style="color:black;">Suicide Rates by Country</h1>
-            <p style = "font-size:20x">Interactive charts below</p>
+            <p style = "font-size:20x">Interactive charts and Country ID Table below</p>
         </div>
     </div>
 </div>
+
+  <!-- country selector -->
     <div class="row">
         <div class="col-md-2">
             <div class="well">
@@ -26,33 +29,33 @@
                 <select id="selDataset" onchange="optionChanged(this.value)"></select>
             </div>
         </div>
+        <!-- line graph -->
         <div class="col-md-12">
             <div id="line"></div>
         </div>
     </div>
 
+    <!-- bar graph -->
     <div class="row">
-
             <div class="col-md-12">
                 <div id="bar"></div>
             </div>
-
     </div>
+
+    <!-- map -->
     <div class="row">
-        <div class="col-md-2">
-            <div class="well">
-                <h5 style="color:black;">Select Year:</h5>
-                <select id="selYear" onchange="yearChanged(this.value)"></select>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-md-12">
-                <div id="map-title"><h3>Suicide rates per 100,000 persons <h3></div>
+            <div class="col-md-12 jumbotron text-center">
+                <div id="map-title"><h3>Suicide Rates in 2000 (per 100,000 persons) <h3></div>
                 <div id="map"></div>
             </div>
-
+      </div>
+      <!--- Add Alpha-3 Translator Table Code --->
+      <div class="row">
+        <div class="col-md-12 jumbotron text-center">
+          <h3 style="color:black;"> Country ID Table</h3>
+          <img src="{{url_for('static', filename='Country_Code_List.jpg')}}" alt="Country ID Table"  width="300" height="600">
         </div>
-
+      </div>
 
 <!-- D3, graphing library -->
 
@@ -73,7 +76,7 @@
 <!-- javescript sources  -->
 <script src="{{ url_for('static', filename='js/app.js') }}"></script>
 <script src="{{ url_for('static', filename='js/d3.js') }}"></script>
-<script src="{{ url_for('static', filename='js/map.js') }}"></script>
+<script src="{{ url_for('static', filename='js/map1.js') }}"></script>
 <script src="{{ url_for('static', filename='js/d3.v3.min.js') }}"></script>
 
 
