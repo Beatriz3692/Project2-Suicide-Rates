@@ -10,7 +10,7 @@ console.log("Start")
 // var gBackground = svg.append("g"); // appended first
 
 var projection = d3.geoEquirectangular()
-										.scale(150)
+										.scale(135)
 										.translate([450, 250]);
 var path = d3.geoPath(projection);
 
