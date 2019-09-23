@@ -1,5 +1,4 @@
-from pet_pals.app import db
-import os
+from heroku-beatriz-biodiversity.app import db
 
 # db.drop_all()
 db.create_all()
