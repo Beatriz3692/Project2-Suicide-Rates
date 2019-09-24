@@ -1,7 +1,17 @@
 # Project2-Suicide-Rates
 
-## Project Link: https://suicide-rates-project.herokuapp.com
+## PROJECT LINK: https://suicide-rates-project.herokuapp.com
 
-## Proposal 
+## OBJECTIVE:
 
-The purpose of this project is to create a visual representation of suicide rates in 40 different countries over 19 years. To do this, I am going to make a dashboard that includes multiple charts updating from the same data. 
+The objective of this project is to create a visual representations of suicide rates in 40 different countries over 19 years. 
+
+## DATA SOURCES:
+
+-- **OECD Data** - Suicide Rates https://data.oecd.org/healthstat/suicide-rates.htm
+
+## DATA CLEAN UP
+
+Used Python pandas on Jupyter notebook to clean up raw data.
+
+
