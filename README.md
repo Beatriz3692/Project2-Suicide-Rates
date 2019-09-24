@@ -18,5 +18,13 @@ The objective of this project is to create a visual representations of suicide r
 
 - Export Jupyter notebook table onto new database.
 
-
-
+## LANGUAGES:
+- Python - Programming Language
+  - Flask
+  - Pandas 
+- Javascript - Programming Languange
+  - D3 - Data-Driven Documents
+  - D3.GeoJSON - projection format
+- CSS - Style Sheet Language
+  - Bootstrap
+- HTML - Mark up language 
