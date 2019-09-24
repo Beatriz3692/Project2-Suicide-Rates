@@ -1,6 +1,6 @@
 # Project2-Suicide-Rates
 
-## PROJECT LINK: https://suicide-rates-project.herokuapp.com
+## HEROKU LINK: https://suicide-rates-project.herokuapp.com
 
 ## OBJECTIVE:
 
