@@ -4,7 +4,7 @@
 
 ## OBJECTIVE:
 
-The objective of this project is to create a visual representations of suicide rates in 40 different countries over 19 years. 
+The objective of this project is to create a visual representation of suicide rates in 40 different countries over 19 years. 
 
 ## DATA SOURCES:
 
