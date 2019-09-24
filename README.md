@@ -37,8 +37,8 @@ The objective of this project is to create a visual representations of suicide r
 
 ## RESULTS:
 * Bar Graph Screenshot
-![Bar Graph Screenshot]("https://github.com/Beatriz3692/Project2-Suicide-Rates/blob/master/Presentation/bar_graph.png")
+![Bar Graph Screenshot](https://github.com/Beatriz3692/Project2-Suicide-Rates/blob/master/Presentation/bar_graph.png "Bar Graph Screenshot")
 * Line Graph Screenshot
-![Line Graph Screenshot]("https://github.com/Beatriz3692/Project2-Suicide-Rates/blob/master/Presentation/line_graph.png")
+![Line Graph Screenshot](https://github.com/Beatriz3692/Project2-Suicide-Rates/blob/master/Presentation/line_graph.png "Line Graph Screenshot")
 * Map Screenshot
-![Map Screenshot]("https://github.com/Beatriz3692/Project2-Suicide-Rates/blob/master/Presentation/map.png")
+![Map Screenshot](https://github.com/Beatriz3692/Project2-Suicide-Rates/blob/master/Presentation/map.png "Map Screenshot")
