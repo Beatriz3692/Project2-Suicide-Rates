@@ -10,8 +10,13 @@ The objective of this project is to create a visual representations of suicide r
 
 -- **OECD Data** - Suicide Rates https://data.oecd.org/healthstat/suicide-rates.htm
 
-## DATA CLEAN UP
+## DATA CLEAN UP AND TRANSFORMATION
 
-Used Python pandas on Jupyter notebook to clean up raw data.
+--Used Python pandas on Jupyter notebook to clean up raw data.
+
+--Create database with SQLite Browser and connect to Jupyter notebook.
+
+--Export Jupyter notebook table onto new database.
+
 
 
