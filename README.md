@@ -8,7 +8,7 @@ The objective of this project is to create a visual representation of suicide ra
 
 ## DATA SOURCES:
 
-- **OECD Data** - Suicide Rates https://data.oecd.org/healthstat/suicide-rates.htm
+- **OECD Data** - Suicide Rates https://data.oecd.org/healthstat/suicide-rates.html
 
 ## DATA CLEAN UP AND TRANSFORMATION
 
